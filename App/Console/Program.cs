@@ -1,4 +1,5 @@
-﻿using Patterns.FactoryMethod;
+﻿using Patterns.App.Console.Patterns;
+using Patterns.FactoryMethod;
 using System;
 
 namespace Patterns.App.Console
@@ -7,11 +8,27 @@ namespace Patterns.App.Console
     {
         static void Main(string[] args)
         {
-            AppFactoryMethod factoryMethod = new AppFactoryMethod("Web");
-            IButton button = factoryMethod.init();
+            #region AppFactoryMethod
+            //AppFactoryMethod factoryMethod = new AppFactoryMethod("Web");
+            //IButton button = factoryMethod.init();
 
-            button.render();
-            button.onClick();
+            //button.render();
+            //button.onClick();
+            #endregion
+
+
+            #region AppAbstractFactory
+            AppAbstractFactory appAbstractFactory = new AppAbstractFactory("Linux");
+            appAbstractFactory.application.createButton();
+            appAbstractFactory.application.createCheckbox();
+            appAbstractFactory.application.createTextEdit();
+
+            appAbstractFactory.application.paintButton();
+            appAbstractFactory.application.paintCheckbox();
+            appAbstractFactory.application.paintTextEdit();
+            #endregion
+
+            System.Console.ReadLine();
         }
     }
 }

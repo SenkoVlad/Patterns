@@ -9,7 +9,7 @@ namespace Patterns.FactoryMethod.Factories
     public class HtmlDialog : DialogFactory
     {
         public override IButton createButton()
-        {
+        {   
             return new HTMLButton();
         }
     }
