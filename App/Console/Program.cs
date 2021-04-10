@@ -16,19 +16,22 @@ namespace Patterns.App.Console
             //button.onClick();
             #endregion
 
-
             #region AppAbstractFactory
-            AppAbstractFactory appAbstractFactory = new AppAbstractFactory("Linux");
-            appAbstractFactory.application.createButton();
-            appAbstractFactory.application.createCheckbox();
-            appAbstractFactory.application.createTextEdit();
+            //AppAbstractFactory appAbstractFactory = new AppAbstractFactory("Linux");
+            //appAbstractFactory.application.createButton();
+            //appAbstractFactory.application.createCheckbox();
+            //appAbstractFactory.application.createTextEdit();
 
-            appAbstractFactory.application.paintButton();
-            appAbstractFactory.application.paintCheckbox();
-            appAbstractFactory.application.paintTextEdit();
+            //appAbstractFactory.application.paintButton();
+            //appAbstractFactory.application.paintCheckbox();
+            //appAbstractFactory.application.paintTextEdit();
             #endregion
 
-            System.Console.ReadLine();
+            #region AppBuilder
+            AppBuilder appBuilder = new AppBuilder();
+            appBuilder.MakeSport();
+            appBuilder.Show();
+            #endregion
         }
     }
 }
