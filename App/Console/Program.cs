@@ -1,6 +1,8 @@
 ﻿using Patterns.App.Console.Patterns;
 using Patterns.FactoryMethod;
+using Patterns.Prototype;
 using System;
+using System.Collections.Generic;
 
 namespace Patterns.App.Console
 {
@@ -28,9 +30,14 @@ namespace Patterns.App.Console
             #endregion
 
             #region AppBuilder
-            AppBuilder appBuilder = new AppBuilder();
-            appBuilder.MakeSport();
-            appBuilder.Show();
+            //AppBuilder appBuilder = new AppBuilder();
+            //appBuilder.MakeSport();
+            //appBuilder.Show();
+            #endregion
+
+            #region AppPrototype
+            AppPrototype appPrototype = new AppPrototype();
+            List<Shape> shapes = appPrototype.Business();
             #endregion
         }
     }

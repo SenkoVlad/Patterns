@@ -1,11 +1,5 @@
-﻿using Patterns.Builder.Buliders.Implementation;
-using Patterns.Builder.Buliders.Interfaces;
+﻿using Patterns.Builder.Buliders.Interfaces;
 using Patterns.Builder.Entity.Implementation;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Patterns.Builder.Buliders
 {
