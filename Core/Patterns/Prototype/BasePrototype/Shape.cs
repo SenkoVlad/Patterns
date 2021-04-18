@@ -14,16 +14,13 @@ namespace Patterns.Prototype
 
         public Shape()
         {
-
         }
-
         public Shape(Shape shape)
         {
             X = shape.X;
             Y = shape.Y;
             Color = shape.Color;
         }
-
         public abstract Shape Clone();
     }
 }

@@ -15,10 +15,8 @@ namespace Patterns.Prototype.Prototype
             Width = rectangel.Width;
             Height = rectangel.Height;
         }
-
         public Rectangle()
         {
-
         }
         public override Shape Clone()
         {
@@ -26,3 +24,4 @@ namespace Patterns.Prototype.Prototype
         }
     }
 }
+    

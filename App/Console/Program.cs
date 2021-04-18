@@ -36,9 +36,17 @@ namespace Patterns.App.Console
             #endregion
 
             #region AppPrototype
-            AppPrototype appPrototype = new AppPrototype();
-            List<Shape> shapes = appPrototype.Business();
+            //AppPrototype appPrototype = new AppPrototype();
+            //List<Shape> shapes = appPrototype.Business();
             #endregion
+
+            #region Appsingelton
+            AppSingelton appSingelton = new AppSingelton();
+            appSingelton.Execute();
+            #endregion
+
+
+            System.Console.ReadKey();
         }
     }
 }

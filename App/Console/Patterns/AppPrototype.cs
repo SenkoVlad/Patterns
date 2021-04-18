@@ -17,7 +17,7 @@ namespace Patterns.App.Console
             circle.Y = 10;
             circle.Radius = 20;
             circle.Color = "Red";
-            Shapes.Add(circle);
+            Shapes.Add(circle); 
 
             Rectangle rectangle = new Rectangle();
             rectangle.Width = 10;
