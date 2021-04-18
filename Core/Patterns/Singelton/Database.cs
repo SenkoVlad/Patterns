@@ -21,10 +21,8 @@ namespace Patterns.Singelton
                 if (connection == null)
                 {
                     Database.connection = new Database();
-                    return connection;
                 }
-                else
-                    return connection;
+                return connection;
             } 
         }
 
