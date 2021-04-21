@@ -41,11 +41,14 @@ namespace Patterns.App.Console
             #endregion
 
             #region Appsingelton
-            AppSingelton appSingelton = new AppSingelton();
-            appSingelton.Execute();
+            //AppSingelton appSingelton = new AppSingelton();
+            //appSingelton.Execute();
             #endregion
 
-
+            #region AppAdapter
+            AppAdapter.Test();
+            #endregion
+            
             System.Console.ReadKey();
         }
     }
