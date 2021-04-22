@@ -46,9 +46,13 @@ namespace Patterns.App.Console
             #endregion
 
             #region AppAdapter
-            AppAdapter.Test();
+            //AppAdapter.Test();
             #endregion
-            
+
+            #region AppBridge
+            AppBridge.Test();
+            #endregion
+
             System.Console.ReadKey();
         }
     }
